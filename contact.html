@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <title>Contact Me</title>
+  </head>
+
+  <body>
+    <!-- Header Navigation -->
+    <header>
+      <div class="header-container">
+        <div class="header-left">Contact Me</div>
+        <nav class="header-right">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="work.html">Work</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+      <section class="contact-section">
+        <p>
+          I'm always open to new opportunities and collaborations. Whether you
+          have a project in mind, want to discuss tech, or just say hi, feel
+          free to reach out!
+        </p>
+
+        <!-- Contact Form -->
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="cta-button faded">Submit</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p>You can reach me at:</p>
+          <p>
+            📧 <a href="mailto:royjysmael@gmail.com">royjysmael@gmail.com</a>
+          </p>
+          <p>📞 <a href="tel:+14085079724">(408) 507-9724</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Accessibility Tool -->
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>

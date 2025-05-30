@@ -1,0 +1,528 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  /*=== Typography ===*/
+
+  /*=== Spacing & Radius ===*/
+
+  /*===  Effects ===*/
+}
+
+/* === Reset box-sizing for all elements === */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* === Root Variables for Colors === */
+
+/* === Base Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* === Link Styling === */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #e91e63;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:active {
+  color: navy;
+}
+
+/* === Header Container === */
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #04010f;
+}
+
+.header-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-right a {
+  margin-left: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-right a.active {
+  color: blue;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* === Call-to-Action Button === */
+.cta-button {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #e91e63;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+/* === About Skills Section === */
+.about-skills {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.about-skills h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-skills table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.about-skills th,
+.about-skills td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.about-skills th {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.about-skills tr:hover {
+  background-color: #333;
+}
+
+/* === Main Center Wrapper (Centers content inside main tag) === */
+.main-center-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* === About Hero Section === */
+.about-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+
+.main-avatar {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+/* === Logo Aura Animation === */
+.logo-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 2rem auto;
+}
+
+.logo-aura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: visible;
+}
+
+.logo-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+/* === Contact Section === */
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-section label {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-section p a {
+  color: #333;
+}
+
+/* === Project Grid === */
+.project-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.project-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.project-box:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.project-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.project-box p {
+  margin-bottom: 15px;
+}
+
+.project-box a {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+/* === Social Icon Animation === */
+.social-icon {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-animation: fadeUp 1s ease forwards;
+  animation: fadeUp 1s ease forwards;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  margin: 0 8px;
+}
+
+.social-icon:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes fadeUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* === Falling Item Animation === */
+.falling-item {
+  position: absolute;
+  top: -100px;
+  left: 64%;
+  width: 80px;
+  -webkit-animation: drop-in 1.2s ease-out forwards;
+  animation: drop-in 1.2s ease-out forwards;
+  z-index: 2;
+}
+
+@-webkit-keyframes drop-in {
+  0% {
+    top: -100px;
+    opacity: 0;
+    -webkit-transform: rotate(-30deg) scale(0.8);
+    transform: rotate(-30deg) scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: rotate(10deg) scale(1.1);
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    top: 350px;
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes drop-in {
+  0% {
+    top: -100px;
+    opacity: 0;
+    -webkit-transform: rotate(-30deg) scale(0.8);
+    transform: rotate(-30deg) scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: rotate(10deg) scale(1.1);
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    top: 350px;
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* === Footer Content Centering === */
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.footer-content p:last-of-type {
+  margin-top: 1rem;
+}
+
+/* === Media Queries === */
+@media (max-width: 768px) {
+  .about-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about-hero img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .about-skills {
+    padding: 30px 15px;
+  }
+
+  .about-skills table,
+  .about-skills th,
+  .about-skills td {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .about-hero img {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}

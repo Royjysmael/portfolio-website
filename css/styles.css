@@ -1,0 +1,446 @@
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --accent-color: #e91e63;
+  --black: #000;
+  --white: #fff;
+  --gray-90: #111;
+  --gray-80: #222;
+  --gray-70: #444;
+  --gray-40: #ccc;
+  --gray-30: #ddd;
+  --dark-border: #04010f;
+  --light-gray-bg: #f0f0f0;
+
+  /*=== Typography ===*/
+  --font-family-base: "Roboto", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --line-height-base: 1.6;
+
+  /*=== Spacing & Radius ===*/
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --border-radius: 8px;
+
+  /*===  Effects ===*/
+  --transition-speed: 0.3s;
+  --box-shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Reset box-sizing for all elements === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Root Variables for Colors === */
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --accent-color: #e91e63;
+}
+
+/* === Base Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* === Link Styling === */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+a:visited {
+  color: purple;
+}
+
+a:active {
+  color: navy;
+}
+
+/* === Header Container === */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid #04010f;
+}
+
+.header-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-right a {
+  margin-left: 1rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.header-right a.active {
+  color: blue;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* === Call-to-Action Button === */
+.cta-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:active {
+  transform: scale(0.97);
+}
+
+/* === About Skills Section === */
+.about-skills {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.about-skills h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-skills table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.about-skills th,
+.about-skills td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.about-skills th {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.about-skills tr:hover {
+  background-color: #333;
+}
+
+/* === Main Center Wrapper (Centers content inside main tag) === */
+.main-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* === About Hero Section === */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 3rem;
+}
+
+.main-avatar {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+/* === Logo Aura Animation === */
+.logo-wrapper {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 2rem auto;
+}
+
+.logo-aura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: visible;
+}
+
+.logo-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+/* === Contact Section === */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-section label {
+  align-self: flex-start;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.contact-section p a {
+  color: var(--text-color);
+}
+
+/* === Project Grid === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.project-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.project-box:hover {
+  transform: scale(0.95);
+}
+
+.project-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.project-box p {
+  margin-bottom: 15px;
+}
+
+.project-box a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* === Social Icon Animation === */
+.social-icon {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 1s ease forwards;
+  transition: transform 0.3s ease;
+  margin: 0 8px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Falling Item Animation === */
+.falling-item {
+  position: absolute;
+  top: -100px;
+  left: 64%;
+  width: 80px;
+  animation: drop-in 1.2s ease-out forwards;
+  z-index: 2;
+}
+
+@keyframes drop-in {
+  0% {
+    top: -100px;
+    opacity: 0;
+    transform: rotate(-30deg) scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    top: 350px;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+/* === Footer Content Centering === */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.footer-content p:last-of-type {
+  margin-top: 1rem;
+}
+
+/* === Media Queries === */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .about-hero img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .about-skills {
+    padding: 30px 15px;
+  }
+
+  .about-skills table,
+  .about-skills th,
+  .about-skills td {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .about-hero img {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
